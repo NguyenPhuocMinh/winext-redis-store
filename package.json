@@ -1,0 +1,26 @@
+{
+  "name": "app-redis-store",
+  "version": "1.0.0",
+  "description": "Building redis cache in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "winext"
+  ],
+  "author": "Minh Nguyễn",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^4.0.6",
+    "winext": "git+https://github.com/NguyenPhuocMinh/winext.git#25185ce0c1a07e66849526446c0bc4361a3e0085"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  }
+}
