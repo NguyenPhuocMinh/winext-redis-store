@@ -1,1 +1,1 @@
-module.exports = require('./lib/mapping');
+module.exports = require('./lib/redis');
