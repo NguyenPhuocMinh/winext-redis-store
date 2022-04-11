@@ -23,13 +23,14 @@ function RedisClient(params = {}) {
       loggerFactory.info(`Func setSetex has been start`, {
         requestId: `${requestId}`,
       });
-      loggerTracer.info(chalk.green(`Func setSetex has been start with ${key}-${seconds}-${value}`));
+      loggerTracer.info(
+        chalk.green.bold(`Func setSetex has been start with key:${key}, seconds:${seconds}, value:${value}`)
+      );
 
-      return client.SETEX(key, seconds, value);
+      return client.setEx(key, seconds, value);
     } catch (err) {
       loggerFactory.error(`Func setSetex has been error : ${err}`, {
         requestId: `${requestId}`,
-        args: { err },
       });
       return Promise.reject(err);
     }
